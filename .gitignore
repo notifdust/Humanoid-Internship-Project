@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Training / experiment artifacts
+runs/
+outputs/
+wandb/
+lightning_logs/
+mlruns/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Local data (keep small samples only)
+data/raw/
+data/processed/
+data/videos/
+*.mp4
+*.avi
+*.mov
+*.hdf5
+*.h5
+!data/**/.gitkeep
+
+# Large resource downloads (optional local cache)
+resources/books/*.pdf
+resources/papers/pdf/*.pdf
+!resources/papers/pdf/.gitkeep
+!resources/books/.gitkeep
+
+# Secrets / credentials
+*.pem
+*.key
+secrets/
+credentials.json
+
+# Coverage / test
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

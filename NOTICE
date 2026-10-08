@@ -1,0 +1,10 @@
+# Third-party notices
+
+This repository may include or link to third-party materials:
+
+- **arXiv papers** under each paper’s arXiv non-exclusive license to distribute.
+- **Sutton & Barto, Reinforcement Learning: An Introduction (2nd ed.)** — free PDF provided by the authors; follow the license stated at http://incompleteideas.net/book/the-book-2nd.html (typically non-commercial, no derivatives).
+- **Modern Robotics** (Lynch & Park) — free preprint is for personal use only; do not redistribute the PDF via this repository. Link: http://modernrobotics.org/
+- Code and models from Hugging Face LeRobot, LIBERO, HaMeR, dex-retargeting, and related projects remain under their respective licenses (often Apache-2.0 or MIT). Check upstream repos before redistributing weights.
+
+The MIT license in `LICENSE` applies to original project files in this repository, not to third-party papers, books, or model weights.
