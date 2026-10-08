@@ -15,6 +15,8 @@
 | Side-by-side ego\|pred\|sim | `outputs/eval/side_by_side_41.mp4` |
 | Ablation MSE table | `outputs/eval/ablation_mse.json` |
 | Closed-loop research notes | [`RESEARCH_CLOSEDLOOP.md`](RESEARCH_CLOSEDLOOP.md) |
+| WM future-frame strips | `outputs/wm/future_frame_strip_*.gif` (+ `.mp4`) |
+| WM train curve | `outputs/wm/future_frame/history.json` |
 | BC training curve | `outputs/checkpoints/bc_baseline/history.json` |
 | SmolVLA training curve | `outputs/train/smolvla_custom/history.json` |
 | SmolVLA checkpoints | `outputs/train/smolvla_custom/checkpoint-*` |

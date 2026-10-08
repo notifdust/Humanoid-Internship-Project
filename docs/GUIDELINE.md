@@ -145,7 +145,7 @@ outputs/                   # videos, plots, checkpoints — gitignored
 16. [~] README polished with honesty + cites; **public GitHub still pending (needs your push/URL)**
 
 **P1 (time-boxed, after P0)**
-17. [ ] Tiny WM future-frame teaser on 2–3 clips (cite IRASim / Ha–Schmidhuber; not full UWM)  
+17. [x] Tiny WM future-frame teaser (`src/wm/`, `outputs/wm/future_frame_strip_{30,41}.gif`)  
 18. [ ] N-seed LIBERO success rate if closed-loop works  
 19. [ ] Retarget qualitative plot (wrist path vs integrated EE)
 
@@ -179,7 +179,7 @@ If SmolVLA install fails: fall back to **ACT or Diffusion Policy** on retargeted
 
 **Nice to have**
 - [x] Quantitative metric (ablation MSE: pretrained 0.029 / finetuned 0.023 / BC 0.021)  
-- [ ] WM prediction strip  
+- [x] WM prediction strip (`outputs/wm/future_frame_strip_*.gif`)  
 - [x] Comparison: pretrained vs finetuned (personal data helps; BC still wins proxy)  
 - [ ] Closed-loop LIBERO task success (ego-ft expected fail; optional libero-ref later)  
 

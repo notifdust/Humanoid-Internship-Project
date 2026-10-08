@@ -28,6 +28,7 @@ Inspired by [EgoVLA](https://rchalyang.github.io/EgoVLA/) (human ego → robot) 
 | MuJoCo EE proxy | `outputs/eval/mujoco_ee_smolvla_41.mp4` |
 | LIBERO open-loop | `outputs/eval/libero_openloop_smolvla_41.mp4` (personal-data actions) |
 | LIBERO closed-loop | `outputs/eval/libero_closedloop_ego_ft.mp4` (domain-transfer; task success=False, expected) |
+| WM teaser (future frame) | `outputs/wm/future_frame_strip_{30,41}.gif` — action-conditioned next-frame (IRASim-style tiny CNN) |
 
 **How to inspect:** [`docs/HOW_TO_CHECK.md`](docs/HOW_TO_CHECK.md) · **Plan:** [`docs/GUIDELINE.md`](docs/GUIDELINE.md) · **Closed-loop research:** [`docs/RESEARCH_CLOSEDLOOP.md`](docs/RESEARCH_CLOSEDLOOP.md)
 
@@ -39,6 +40,8 @@ Inspired by [EgoVLA](https://rchalyang.github.io/EgoVLA/) (human ego → robot) 
 .\.venv\Scripts\python.exe -m src.eval.rollout_smolvla_overlay
 .\.venv\Scripts\python.exe -m src.eval.ablation_mse
 .\.venv\Scripts\python.exe -m src.viz.make_side_by_side
+.\.venv\Scripts\python.exe -m src.wm.train_future_frame
+.\.venv\Scripts\python.exe -m src.wm.make_wm_gif
 
 # WSL2 LIBERO (mujoco==3.1.1, robosuite==1.4.1)
 wsl -e bash scripts/wsl_run_libero_rollout.sh
