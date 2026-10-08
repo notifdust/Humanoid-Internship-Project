@@ -29,6 +29,10 @@ Inspired by [EgoVLA](https://rchalyang.github.io/EgoVLA/) (human ego → robot) 
 | LIBERO open-loop | `outputs/eval/libero_openloop_smolvla_41.mp4` (personal-data actions) |
 | LIBERO closed-loop | `outputs/eval/libero_closedloop_ego_ft.mp4` (domain-transfer; task success=False, expected) |
 | WM teaser (future frame) | `outputs/wm/future_frame_strip_{30,41}.gif` — action-conditioned next-frame (IRASim-style tiny CNN) |
+| Retarget QA plots | `outputs/viz/retarget/*_retarget.png` (wrist vs EE path) |
+| LIBERO open-loop multi-seed | `outputs/eval/libero_openloop_multiseed.json` |
+
+**Repo:** https://github.com/notifdust/Humanoid-Internship-Project/pull/2  
 
 **How to inspect:** [`docs/HOW_TO_CHECK.md`](docs/HOW_TO_CHECK.md) · **Plan:** [`docs/GUIDELINE.md`](docs/GUIDELINE.md) · **Closed-loop research:** [`docs/RESEARCH_CLOSEDLOOP.md`](docs/RESEARCH_CLOSEDLOOP.md)
 
@@ -54,6 +58,7 @@ wsl -e bash scripts/wsl_run_libero_closedloop.sh
 - Personal data → sim is strongest as **open-loop EE deltas** into LIBERO + offline ego MSE.
 - Closed-loop with our ego-finetuned ckpt is **domain transfer** (ego `camera1`/6D ≠ LIBERO `image`/`image2`/8D/7D). Community closed-loop recipes use `HuggingFaceVLA/smolvla_libero`, 180° image rotate, `n_action_steps=1`, relative OSC ([notes](docs/RESEARCH_CLOSEDLOOP.md)).
 - Ablation: finetuning on personal data beats pretrained SmolVLA on held-out action MSE; a tiny BC CNN still wins this proxy (overfit-friendly).
+- Open-loop LIBERO multi-seed on ego-derived actions: **0/5** task success (expected — wrong objects/scene; demos motion transfer, not LIBERO demos).
 - Windows LeRobot CLI tempfile bugs → custom trainer `src/train/train_smolvla_custom.py`.
 
 ## Docs / research

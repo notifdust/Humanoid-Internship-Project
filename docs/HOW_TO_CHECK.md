@@ -17,6 +17,8 @@
 | Closed-loop research notes | [`RESEARCH_CLOSEDLOOP.md`](RESEARCH_CLOSEDLOOP.md) |
 | WM future-frame strips | `outputs/wm/future_frame_strip_*.gif` (+ `.mp4`) |
 | WM train curve | `outputs/wm/future_frame/history.json` |
+| Retarget path plots | `outputs/viz/retarget/*_retarget.png` |
+| LIBERO open-loop multi-seed | `outputs/eval/libero_openloop_multiseed.json` |
 | BC training curve | `outputs/checkpoints/bc_baseline/history.json` |
 | SmolVLA training curve | `outputs/train/smolvla_custom/history.json` |
 | SmolVLA checkpoints | `outputs/train/smolvla_custom/checkpoint-*` |
@@ -46,4 +48,6 @@ wsl -e bash /mnt/c/Users/gabri/OneDrive/Progetti/Humanoid-Internship-Project/scr
 wsl -e bash /mnt/c/Users/gabri/OneDrive/Progetti/Humanoid-Internship-Project/scripts/wsl_run_libero_closedloop.sh
 .\.venv\Scripts\python.exe -m src.eval.ablation_mse
 .\.venv\Scripts\python.exe -m src.viz.make_side_by_side
+.\.venv\Scripts\python.exe -m src.viz.plot_retarget
+wsl -e bash /mnt/c/Users/gabri/OneDrive/Progetti/Humanoid-Internship-Project/scripts/wsl_run_libero_multiseed.sh
 ```

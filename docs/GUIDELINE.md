@@ -142,12 +142,12 @@ outputs/                   # videos, plots, checkpoints — gitignored
 13. [x] **Closed-loop LIBERO** ego-ft domain transfer (`outputs/eval/libero_closedloop_ego_ft.mp4`, success=False as expected) + `docs/RESEARCH_CLOSEDLOOP.md`  
 14. [x] Side-by-side figure: ego | wrist overlay | LIBERO (`outputs/eval/side_by_side_41.mp4`)  
 15. [x] Ablation: pretrained 0.029 → finetuned 0.023 → BC 0.021 (`outputs/eval/ablation_mse.json`)  
-16. [~] README polished with honesty + cites; **public GitHub still pending (needs your push/URL)**
+16. [x] README polished; code on GitHub via PR https://github.com/notifdust/Humanoid-Internship-Project/pull/2 (merge for `main`)
 
 **P1 (time-boxed, after P0)**
 17. [x] Tiny WM future-frame teaser (`src/wm/`, `outputs/wm/future_frame_strip_{30,41}.gif`)  
-18. [ ] N-seed LIBERO success rate if closed-loop works  
-19. [ ] Retarget qualitative plot (wrist path vs integrated EE)
+18. [x] N-seed open-loop LIBERO summary (`outputs/eval/libero_openloop_multiseed.json`) — open-loop only  
+19. [x] Retarget qualitative plot (`outputs/viz/retarget/*_retarget.png`)
 
 **Cut (do not start unless P0 done with days left)**
 - HaMeR / MANO, dex-retargeting IK, full UWM/iVideoGPT/GWM/Dreamer, Isaac, re-film
