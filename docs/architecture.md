@@ -1,20 +1,37 @@
-# Architecture notes (placeholder)
+# Architecture
 
-High-level pipeline once implementation starts:
+Aligned with [`GUIDELINE.md`](GUIDELINE.md).
 
 ```
-[Phone egocentric video]
+data/raw/ego/*.mp4  (4K, personal)
+        │
+        ▼  src/preprocess/resize_videos.py
+data/processed/ego_1080/*.mp4
+        │
+        ▼  src/hands/extract_mediapipe.py
+data/processed/hands/*.json   (wrist, landmarks, confidence)
+        │
+        ▼  src/retarget/wrist_to_panda.py
+data/processed/retarget/*.npz  (EE deltas + gripper)
+        │
+        ├──────────────────────────────┐
+        ▼                              ▼
+LeRobot dataset              (optional) tiny video WM
         │
         ▼
-[Pose / features] ── HaMeR / MediaPipe / learned encoder
+SmolVLA LoRA finetune (4060)
         │
         ▼
-[Retarget or latent align] ── human actions ↔ Panda / LIBERO actions
-        │
-        ├──► [VLA finetune] ── SmolVLA + LeRobot ──► LIBERO rollout
-        │
-        └──► [World model] ── UWM / iVideoGPT / small video predictor
-                              └── optional planning / synthetic rollouts
+LIBERO rollout MP4  →  README side-by-side with ego clip
 ```
 
-Details TBD after choosing primary angle (see `PROJECT_OUTLINE.md`).
+## Modules
+
+| Module | Role |
+|--------|------|
+| `preprocess` | 4K → 1080p, constant 30 fps |
+| `hands` | MediaPipe right-hand landmarks |
+| `retarget` | EgoVLA-inspired wrist → Panda deltas |
+| `dataset` | Pack episodes for LeRobot |
+| `train` | LoRA finetune entrypoint |
+| `eval` | LIBERO rollout + metrics |

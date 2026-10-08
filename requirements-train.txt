@@ -1,0 +1,18 @@
+# Phase C — use Python 3.12 venv (.venv). Python 3.14 will not work.
+# Install torch CUDA explicitly first:
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+#
+# Then:
+#   pip install -r requirements-train.txt
+
+lerobot
+transformers
+num2words
+huggingface_hub
+datasets
+accelerate
+safetensors
+einops
+draccus
+av
+pyarrow

@@ -20,8 +20,12 @@ wheels/
 .installed.cfg
 *.egg
 .venv/
+.venv_wsl_libero/
 venv/
 env/
+source/
+;/
+third_party/
 .env
 .env.*
 !.env.example
@@ -62,12 +66,22 @@ data/videos/
 *.hdf5
 *.h5
 !data/**/.gitkeep
+# Track dataset metadata (not the videos)
+!data/labels.csv
+!data/CAPTURE_NOTES.md
+!data/rename_map.csv
+!data/media_stats.csv
 
 # Large resource downloads (optional local cache)
 resources/books/*.pdf
 resources/papers/pdf/*.pdf
 !resources/papers/pdf/.gitkeep
 !resources/books/.gitkeep
+
+# Models / local caches
+models/
+.venv/
+.venv314/
 
 # Secrets / credentials
 *.pem

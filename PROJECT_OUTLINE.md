@@ -15,7 +15,7 @@ Humanoid builds commercially scalable humanoid robots (platform **HMND‑01**) f
 
 The challenge is the filter for that internship: a public GitHub repo demonstrating how you think about **robot learning with personally collected data**, not a polished production system.
 
-**Deadline:** Friday, 9 October 2026, 23:59 BST  
+**Deadline:** Thursday, 16 October 2026, 23:59 BST  
 **Format:** Public GitHub repository + README/presentation (run instructions, example outputs, design choices, what worked / what didn’t)
 
 ---
@@ -71,14 +71,14 @@ For the internship itself, the broader aim is contributing to systems that let h
 
 ---
 
-## Open decisions (next)
+## Decisions (locked)
 
-Not fixed yet — to decide before building:
+See **[`docs/GUIDELINE.md`](docs/GUIDELINE.md)** — ultimate guideline.
 
-- **Primary angle:** policy post-training vs world model vs retargeting vs RL fine-tune vs inference speed  
-- **Task:** which simple manipulation to film and reproduce in sim  
-- **Stack:** LIBERO (or alternative), base model (e.g. SmolVLA), training environment  
-- **Data format:** how egocentric video becomes training signal (actions, goals, latents, etc.)
+- **Angle:** ego video → MediaPipe → wrist→Panda retarget → SmolVLA LoRA → LIBERO  
+- **Task:** `pick_place_mug` (fuchsia mug → white plate)  
+- **Data:** 42 clips in `data/raw/ego/` (good enough; no reshoot)  
+- **WM:** secondary only if time
 
 ---
 
