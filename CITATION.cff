@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Humanoid Internship Project"
+type: software
+license: MIT
+repository-code: "https://github.com/notifdust/Humanoid-Internship-Project"
+abstract: >-
+  Challenge submission exploring personally collected egocentric manipulation
+  data for vision-language-action and/or world-model driven control in
+  simulation (e.g. LIBERO).
+keywords:
+  - robotics
+  - vision-language-action
+  - world-models
+  - imitation-learning
+  - LIBERO
+version: 0.1.0
+date-released: "2026-10-08"
