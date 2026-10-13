@@ -1,7 +1,7 @@
 # Ultimate guideline — Humanoid internship challenge
 
 **Single source of truth for what we build, why, and in what order.**  
-Deadline: **Thursday 16 Oct 2026, 23:59 BST**. Hardware: **RTX 4060 laptop (8 GB)**.
+Deadline: **Friday 16 Oct 2026, 23:59 BST** (Ashby posting). Hardware: **RTX 4060 laptop (8 GB)**.
 
 ---
 
@@ -142,7 +142,7 @@ outputs/                   # videos, plots, checkpoints — gitignored
 13. [x] **Closed-loop LIBERO** ego-ft domain transfer (`outputs/eval/libero_closedloop_ego_ft.mp4`, success=False as expected) + `docs/RESEARCH_CLOSEDLOOP.md`  
 14. [x] Side-by-side figure: ego | wrist overlay | LIBERO (`outputs/eval/side_by_side_41.mp4`)  
 15. [x] Ablation: pretrained 0.029 → finetuned 0.023 → BC 0.021 (`outputs/eval/ablation_mse.json`)  
-16. [x] README polished; code on GitHub via PR https://github.com/notifdust/Humanoid-Internship-Project/pull/2 (merge for `main`)
+16. [x] README polished; **merged to `main`** — https://github.com/notifdust/Humanoid-Internship-Project
 
 **P1 (time-boxed, after P0)**
 17. [x] Tiny WM future-frame teaser (`src/wm/`, `outputs/wm/future_frame_strip_{30,41}.gif`)  
@@ -191,7 +191,7 @@ If SmolVLA install fails: fall back to **ACT or Diffusion Policy** on retargeted
 |------|--------|
 | Now | Nothing on filming — data is enough |
 | If asked | Confirm a clip is success/fail if QA is ambiguous |
-| Before submit | Review README narrative; fill application form + GitHub URL |
+| Before submit | Follow [`docs/SUBMISSION.md`](SUBMISSION.md): public repo URL + Ashby form + CV |
 | Optional | Record 3 side-camera clips (not required) |
 
 ---
