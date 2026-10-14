@@ -45,7 +45,10 @@ desktop.ini
 
 # Training / experiment artifacts
 runs/
-outputs/
+outputs/*
+# Keep submission demo reel + still for GitHub
+!outputs/demo/
+!outputs/demo/**
 wandb/
 lightning_logs/
 mlruns/
@@ -61,8 +64,11 @@ data/raw/
 data/processed/
 data/videos/
 *.mp4
+!outputs/demo/*.mp4
 *.avi
 *.mov
+!outputs/demo/*.jpg
+!outputs/demo/*.gif
 *.hdf5
 *.h5
 !data/**/.gitkeep

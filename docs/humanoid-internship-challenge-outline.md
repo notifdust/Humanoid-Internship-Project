@@ -1,7 +1,7 @@
 # Humanoid Internship Challenge — Project Outline
 
 **Source:** [Internship, Robot Learning Research at Humanoid](https://www.physicalai.jobs/humanoid/internship-robot-learning-research)  
-**Submission deadline:** Friday, 9 October 2026, 23:59 BST  
+**Submission deadline:** Friday, 16 October 2026, 23:59 BST  
 **Deliverable:** Public GitHub repository (README/presentation, run instructions, example outputs, design notes)
 
 ---
@@ -100,7 +100,7 @@ A **public GitHub repository** that includes:
 - **Design notes** — choices made, what worked, what failed  
 - Ability to paste the repo URL into their application form with name + CV  
 
-**Timeline note:** submission window closes **9 October 2026, 23:59 BST** (two-week challenge window from their posting).
+**Timeline note:** submission window closes **16 October 2026, 23:59 BST** (Ashby posting).
 
 ---
 

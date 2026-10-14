@@ -15,7 +15,7 @@ Humanoid builds commercially scalable humanoid robots (platform **HMND‑01**) f
 
 The challenge is the filter for that internship: a public GitHub repo demonstrating how you think about **robot learning with personally collected data**, not a polished production system.
 
-**Deadline:** Thursday, 16 October 2026, 23:59 BST  
+**Deadline:** Friday, 16 October 2026, 23:59 BST  
 **Format:** Public GitHub repository + README/presentation (run instructions, example outputs, design choices, what worked / what didn’t)
 
 ---
