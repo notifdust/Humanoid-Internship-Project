@@ -19,6 +19,7 @@
 | WM train curve | `outputs/wm/future_frame/history.json` |
 | Retarget path plots | `outputs/viz/retarget/*_retarget.png` |
 | LIBERO open-loop multi-seed | `outputs/eval/libero_openloop_multiseed.json` |
+| **Challenge demo reel** | `outputs/demo/challenge_demo.mp4` (~47s) |
 | BC training curve | `outputs/checkpoints/bc_baseline/history.json` |
 | SmolVLA training curve | `outputs/train/smolvla_custom/history.json` |
 | SmolVLA checkpoints | `outputs/train/smolvla_custom/checkpoint-*` |
@@ -49,5 +50,6 @@ wsl -e bash /mnt/c/Users/gabri/OneDrive/Progetti/Humanoid-Internship-Project/scr
 .\.venv\Scripts\python.exe -m src.eval.ablation_mse
 .\.venv\Scripts\python.exe -m src.viz.make_side_by_side
 .\.venv\Scripts\python.exe -m src.viz.plot_retarget
+.\scripts\make_demo.ps1
 wsl -e bash /mnt/c/Users/gabri/OneDrive/Progetti/Humanoid-Internship-Project/scripts/wsl_run_libero_multiseed.sh
 ```

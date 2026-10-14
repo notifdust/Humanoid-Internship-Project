@@ -6,6 +6,11 @@ Public submission for [Humanoid — Internship, Robot Learning Research](https:/
 
 **Deadline:** Friday, 16 October 2026, 23:59 BST · **Repo:** https://github.com/notifdust/Humanoid-Internship-Project
 
+**Demo reel (~47s):** [`outputs/demo/challenge_demo.mp4`](outputs/demo/challenge_demo.mp4) — ego overlay → SmolVLA → side-by-side → LIBERO → MuJoCo → WM → results card.  
+Regenerate: `.\scripts\make_demo.ps1`
+
+![Demo preview (ego wrist track)](outputs/demo/challenge_demo_preview.jpg)
+
 ---
 
 ## Idea in one picture
@@ -58,6 +63,7 @@ Large videos/checkpoints are **gitignored** (see paths above). Clone + regenerat
 .\.venv\Scripts\python.exe -m src.wm.train_future_frame
 .\.venv\Scripts\python.exe -m src.wm.make_wm_gif
 .\.venv\Scripts\python.exe -m src.viz.plot_retarget
+.\scripts\make_demo.ps1   # -> outputs/demo/challenge_demo.mp4
 
 # WSL2 LIBERO (mujoco==3.1.1, robosuite==1.4.1, lerobot==0.3.2)
 wsl -e bash scripts/wsl_run_libero_rollout.sh

@@ -21,7 +21,8 @@ https://github.com/notifdust/Humanoid-Internship-Project
 1. [ ] Repo is **public**
 2. [ ] README opens cleanly on GitHub (no broken relative links to local-only videos — paths are documented)
 3. [ ] CV uploaded in Ashby form
-4. [ ] You watched `outputs/eval/side_by_side_41.mp4` and `outputs/wm/future_frame_strip_41.gif` locally once (gitignored large media)
+4. [ ] Watch the demo: `outputs/demo/challenge_demo.mp4` (or rebuild with `.\scripts\make_demo.ps1`)
+5. [ ] Optionally also open `outputs/eval/side_by_side_41.mp4` and `outputs/wm/future_frame_strip_41.gif`
 
 ## What judges should see in the README
 

@@ -1,0 +1,10 @@
+{
+  "out": "outputs\\demo\\challenge_demo.mp4",
+  "frames": 944,
+  "fps": 20.0,
+  "duration_sec": 47.2,
+  "size": [
+    1280,
+    720
+  ]
+}
